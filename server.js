@@ -3,7 +3,6 @@ var app = express();
 const hbs = require('hbs');
 const fs = require('fs');
 
-
 const port = process.env.PORT || 3000;
 
 hbs.registerPartials(__dirname + '/views/partials');
@@ -50,7 +49,6 @@ app.get('/', (req, res)=> {
     })    
 
 });
-
 
 app.get('/about',(req, res)=>{
     // res.send('about page!');
